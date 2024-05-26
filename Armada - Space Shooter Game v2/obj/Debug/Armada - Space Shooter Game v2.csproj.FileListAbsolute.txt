@@ -1,0 +1,12 @@
+D:\Dropbox\university\CSx24\csharp\Armada - Space Shooter Game v2\Armada - Space Shooter Game v2\bin\Debug\Armada - Space Shooter Game v2.exe.config
+D:\Dropbox\university\CSx24\csharp\Armada - Space Shooter Game v2\Armada - Space Shooter Game v2\bin\Debug\Armada - Space Shooter Game v2.exe
+D:\Dropbox\university\CSx24\csharp\Armada - Space Shooter Game v2\Armada - Space Shooter Game v2\bin\Debug\Armada - Space Shooter Game v2.pdb
+D:\Dropbox\university\CSx24\csharp\Armada - Space Shooter Game v2\Armada - Space Shooter Game v2\obj\Debug\Armada - Space Shooter Game v2.csproj.AssemblyReference.cache
+D:\Dropbox\university\CSx24\csharp\Armada - Space Shooter Game v2\Armada - Space Shooter Game v2\obj\Debug\Armada___Space_Shooter_Game_v2.Properties.Resources.resources
+D:\Dropbox\university\CSx24\csharp\Armada - Space Shooter Game v2\Armada - Space Shooter Game v2\obj\Debug\Armada - Space Shooter Game v2.csproj.GenerateResource.cache
+D:\Dropbox\university\CSx24\csharp\Armada - Space Shooter Game v2\Armada - Space Shooter Game v2\obj\Debug\Armada - Space Shooter Game v2.csproj.CoreCompileInputs.cache
+D:\Dropbox\university\CSx24\csharp\Armada - Space Shooter Game v2\Armada - Space Shooter Game v2\obj\Debug\Armada - Space Shooter Game v2.exe
+D:\Dropbox\university\CSx24\csharp\Armada - Space Shooter Game v2\Armada - Space Shooter Game v2\obj\Debug\Armada - Space Shooter Game v2.pdb
+D:\Dropbox\university\CSx24\csharp\Armada - Space Shooter Game v2\Armada - Space Shooter Game v2\obj\Debug\Interop.WMPLib.dll
+D:\Dropbox\university\CSx24\csharp\Armada - Space Shooter Game v2\Armada - Space Shooter Game v2\obj\Debug\Armada - Space Shooter Game v2.csproj.ResolveComReference.cache
+D:\Dropbox\university\CSx24\csharp\Armada - Space Shooter Game v2\Armada - Space Shooter Game v2\obj\Debug\Armada___Space_Shooter_Game_v2.Armada.resources
