@@ -21,6 +21,7 @@ namespace Armada___Space_Shooter_Game_v2
         WindowsMediaPlayer bgAudio;
         WindowsMediaPlayer shootAudio;
         WindowsMediaPlayer boomAudio;
+        WindowsMediaPlayer powerUpAudio;
 
         Random random;
 
@@ -61,7 +62,7 @@ namespace Armada___Space_Shooter_Game_v2
             enemySpeed = 5;
             enemyBulletSpeed = 5;
             ammoSpeed = 20;
-            ammo = new PictureBox[3];
+            ammo = new PictureBox[1];
 
             // Initialize default game state
             pause = false;
@@ -77,7 +78,7 @@ namespace Armada___Space_Shooter_Game_v2
             Image enemy1 = Image.FromFile(@"assets\enemy1.png");
             Image enemy2 = Image.FromFile(@"assets\enemy2.png");
             Image enemy3 = Image.FromFile(@"assets\enemy3.png");
-            Image enemy4 = Image.FromFile(@"assets\enemy4.png");
+            Image powerup1 = Image.FromFile(@"assets\star.gif");
             Image enemy5 = Image.FromFile(@"assets\enemy5.png");
             Image enemy6 = Image.FromFile(@"assets\enemy6.png");
             Image enemy7 = Image.FromFile(@"assets\enemy7.png");
@@ -94,6 +95,7 @@ namespace Armada___Space_Shooter_Game_v2
                 enemies[i].SizeMode = PictureBoxSizeMode.Zoom;
                 enemies[i].BorderStyle = BorderStyle.None;
                 enemies[i].BackColor = Color.Transparent;
+                enemies[i].ForeColor = Color.Transparent;
                 enemies[i].Visible = false;
                 this.Controls.Add(enemies[i]);
                 enemies[i].Location = new Point((i + 1) * 50, -50);
@@ -104,7 +106,7 @@ namespace Armada___Space_Shooter_Game_v2
             enemies[1].Image = enemy1;
             enemies[2].Image = enemy2;
             enemies[3].Image = enemy3;
-            enemies[4].Image = enemy4;
+            enemies[4].Image = powerup1;
             enemies[5].Image = enemy5;
             enemies[6].Image = enemy6;
             enemies[7].Image = enemy7;
@@ -126,17 +128,20 @@ namespace Armada___Space_Shooter_Game_v2
             bgAudio = new WindowsMediaPlayer();
             shootAudio = new WindowsMediaPlayer();
             boomAudio = new WindowsMediaPlayer();
+            powerUpAudio = new WindowsMediaPlayer();
 
             // Load audio files
-            bgAudio.URL = @"audio\GameSong.mp3";
+            bgAudio.URL = @"audio\background.mp3";
             shootAudio.URL = @"audio\shoot.mp3";
             boomAudio.URL = @"audio\boom.mp3";
+            powerUpAudio.URL = @"audio\powerup.mp3";
 
             // Setup audio settings
             bgAudio.settings.setMode("loop", true);
-            bgAudio.settings.volume = 5;
-            shootAudio.settings.volume = 3;
-            boomAudio.settings.volume = 6;
+            bgAudio.settings.volume = 9;
+            shootAudio.settings.volume = 7;
+            boomAudio.settings.volume = 10;
+            powerUpAudio.settings.volume = 10;
 
             stars = new PictureBox[10];
             random = new Random();
@@ -362,39 +367,72 @@ namespace Armada___Space_Shooter_Game_v2
             // Handle collisions between bullets and enemies
             for (int i = 0; i < enemies.Length; i++)
             {
-                if (ammo[0].Bounds.IntersectsWith(enemies[i].Bounds) || ammo[1].Bounds.IntersectsWith(enemies[i].Bounds) || ammo[2].Bounds.IntersectsWith(enemies[i].Bounds))
+                bool bulletCollided = false;
+
+                // Check collision for each bullet with the enemy
+                for (int j = 0; j < ammo.Length; j++)
                 {
-                    boomAudio.controls.play();
-
-                    score += 1;
-                    labelScore.Text = (score < 10) ? "Score: " + score.ToString() : "Score: " + score.ToString();
-
-                    if (score % 30 == 0)
+                    if (ammo[j].Bounds.IntersectsWith(enemies[i].Bounds))
                     {
-                        level += 1;
-                        labelLevel.Text = (level < 10) ? "Level: 0" + level.ToString() : "Level: 0" + level.ToString();
-
-                        if (enemySpeed <= 10 && enemyBulletSpeed <= 10 && difficulty >= 0)
+                        if (i != 4) 
                         {
-                            difficulty--;
-                            enemySpeed++;
-                            enemyBulletSpeed++;
+                            boomAudio.controls.play();
+
+                            score += 1;
+                            labelScore.Text = (score < 10) ? "Score: " + score.ToString() : "Score: " + score.ToString();
+
+                            if (score % 30 == 0)
+                            {
+                                level += 1;
+                                labelLevel.Text = (level < 10) ? "Level: 0" + level.ToString() : "Level: 0" + level.ToString();
+
+                                if (enemySpeed <= 10 && enemyBulletSpeed <= 10 && difficulty >= 0)
+                                {
+                                    difficulty--;
+                                    enemySpeed++;
+                                    enemyBulletSpeed++;
+                                }
+
+                                if (level == 10)
+                                {
+                                    GameOver("Well Done!");
+                                }
+                            }
+
+                            enemies[i].Location = new Point((i + 1) * 50, -100);
+                            bulletCollided = true;
+                            break; 
                         }
-
-                        if (level == 10)
+                        else
                         {
-                            GameOver("Well Done!");
+                            bulletCollided = true;
+                            break; 
                         }
                     }
-
-                    enemies[i].Location = new Point((i + 1) * 50, -100);
                 }
+
+                if (bulletCollided)
+                {
+                    continue; 
+                }
+
                 if (Player.Bounds.IntersectsWith(enemies[i].Bounds))
                 {
-                    boomAudio.settings.volume = 30;
-                    boomAudio.controls.play();
-                    Player.Visible = false;
-                    GameOver("Game Over!");
+                    // Check if the picture box is the powerup
+                    if (i == 4) 
+                    {
+                        IncreaseAmmo();
+                        powerUpAudio.controls.play();
+                        enemies[i].Visible = false; 
+                        enemies[i].Location = new Point((i + 1) * 50, -100); 
+                    }
+                    else
+                    {
+                        boomAudio.settings.volume = 30;
+                        boomAudio.controls.play();
+                        Player.Visible = false;
+                        GameOver("Game Over!");
+                    }
                 }
             }
         }
@@ -465,8 +503,21 @@ namespace Armada___Space_Shooter_Game_v2
                     boomAudio.controls.play();
                     Player.Visible = false;
                     GameOver("Game Over!");
+                    
                 }
             }
+        }
+        private void IncreaseAmmo()
+        {
+            // Increase the amount of player ammo
+            int currentLength = ammo.Length;
+            Array.Resize(ref ammo, currentLength + 1);
+            ammo[currentLength] = new PictureBox();
+            ammo[currentLength].Size = new Size(8, 8);
+            ammo[currentLength].Image = Image.FromFile(@"assets\bullet.png");
+            ammo[currentLength].SizeMode = PictureBoxSizeMode.Zoom;
+            ammo[currentLength].BorderStyle = BorderStyle.None;
+            this.Controls.Add(ammo[currentLength]);
         }
 
         private void labelPlay_Click(object sender, EventArgs e)
@@ -474,9 +525,9 @@ namespace Armada___Space_Shooter_Game_v2
             // Restart the game when Play label is clicked
             this.Controls.Clear();
             InitializeComponent();
+            pictureBoxWelcome.Visible = false;
             Armada_Load(e, e);
             StartTimers();
-            pictureBoxWelcome.Visible = false;
         }
 
         private void labelHelp_Click(object sender, EventArgs e)
@@ -500,8 +551,8 @@ namespace Armada___Space_Shooter_Game_v2
             labelHelp.Visible = true;
         }
 
-    // Change ForeColor when the mouse hovers over the label
-    private void labelHelp_MouseHover(object sender, EventArgs e)
+        // Change ForeColor when the mouse hovers over the label
+        private void labelHelp_MouseHover(object sender, EventArgs e)
         {
             labelHelp.ForeColor = Color.Yellow;
         }

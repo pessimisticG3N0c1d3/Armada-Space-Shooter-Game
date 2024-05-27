@@ -3,7 +3,11 @@
   "WorkspaceRootPath": "D:\\Dropbox\\university\\CSx24\\csharp\\Armada - Space Shooter Game v2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E329DF29-1B9F-4C7A-9435-BAB1416D2089}|Armada - Space Shooter Game v2\\Armada - Space Shooter Game v2.csproj|D:\\Dropbox\\university\\CSx24\\csharp\\Armada - Space Shooter Game v2\\armada - space shooter game v2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{E329DF29-1B9F-4C7A-9435-BAB1416D2089}|Armada - Space Shooter Game v2\\Armada - Space Shooter Game v2.csproj|d:\\dropbox\\university\\csx24\\csharp\\armada - space shooter game v2\\armada - space shooter game v2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E329DF29-1B9F-4C7A-9435-BAB1416D2089}|Armada - Space Shooter Game v2\\Armada - Space Shooter Game v2.csproj|solutionrelative:armada - space shooter game v2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E329DF29-1B9F-4C7A-9435-BAB1416D2089}|Armada - Space Shooter Game v2\\Armada - Space Shooter Game v2.csproj|d:\\dropbox\\university\\csx24\\csharp\\armada - space shooter game v2\\armada - space shooter game v2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E329DF29-1B9F-4C7A-9435-BAB1416D2089}|Armada - Space Shooter Game v2\\Armada - Space Shooter Game v2.csproj|solutionrelative:armada - space shooter game v2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -11,7 +15,7 @@
       "RelativeMoniker": "D:0:0:{E329DF29-1B9F-4C7A-9435-BAB1416D2089}|Armada - Space Shooter Game v2\\Armada - Space Shooter Game v2.csproj|solutionrelative:armada - space shooter game v2\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E329DF29-1B9F-4C7A-9435-BAB1416D2089}|Armada - Space Shooter Game v2\\Armada - Space Shooter Game v2.csproj|d:\\dropbox\\university\\csx24\\csharp\\armada - space shooter game v2\\armada - space shooter game v2\\form1.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "AbsoluteMoniker": "D:0:0:{E329DF29-1B9F-4C7A-9435-BAB1416D2089}|Armada - Space Shooter Game v2\\Armada - Space Shooter Game v2.csproj|D:\\Dropbox\\university\\CSx24\\csharp\\Armada - Space Shooter Game v2\\armada - space shooter game v2\\form1.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
       "RelativeMoniker": "D:0:0:{E329DF29-1B9F-4C7A-9435-BAB1416D2089}|Armada - Space Shooter Game v2\\Armada - Space Shooter Game v2.csproj|solutionrelative:armada - space shooter game v2\\form1.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
     }
   ],
@@ -22,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,7 +34,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Dropbox\\university\\CSx24\\csharp\\Armada - Space Shooter Game v2\\Armada - Space Shooter Game v2\\Program.cs",
+              "RelativeDocumentMoniker": "Armada - Space Shooter Game v2\\Program.cs",
+              "ToolTip": "D:\\Dropbox\\university\\CSx24\\csharp\\Armada - Space Shooter Game v2\\Armada - Space Shooter Game v2\\Program.cs",
+              "RelativeToolTip": "Armada - Space Shooter Game v2\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T01:52:04.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\Dropbox\\university\\CSx24\\csharp\\Armada - Space Shooter Game v2\\Armada - Space Shooter Game v2\\Form1.cs",
+              "RelativeDocumentMoniker": "Armada - Space Shooter Game v2\\Form1.cs",
+              "ToolTip": "D:\\Dropbox\\university\\CSx24\\csharp\\Armada - Space Shooter Game v2\\Armada - Space Shooter Game v2\\Form1.cs [Design]",
+              "RelativeToolTip": "Armada - Space Shooter Game v2\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T02:24:59.986Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Form1.resx",
               "DocumentMoniker": "D:\\Dropbox\\university\\CSx24\\csharp\\Armada - Space Shooter Game v2\\Armada - Space Shooter Game v2\\Form1.resx",
               "RelativeDocumentMoniker": "Armada - Space Shooter Game v2\\Form1.resx",
@@ -42,28 +71,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "D:\\Dropbox\\university\\CSx24\\csharp\\Armada - Space Shooter Game v2\\Armada - Space Shooter Game v2\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "Armada - Space Shooter Game v2\\Form1.Designer.cs",
               "ToolTip": "D:\\Dropbox\\university\\CSx24\\csharp\\Armada - Space Shooter Game v2\\Armada - Space Shooter Game v2\\Form1.Designer.cs",
               "RelativeToolTip": "Armada - Space Shooter Game v2\\Form1.Designer.cs",
-              "ViewState": "AQIAANkAAAAAAAAAAAAowOsAAAAMAAAA",
+              "ViewState": "AQIAABIBAAAAAAAAAAAAACUBAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-25T01:17:33.316Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "D:\\Dropbox\\university\\CSx24\\csharp\\Armada - Space Shooter Game v2\\Armada - Space Shooter Game v2\\Form1.cs",
-              "RelativeDocumentMoniker": "Armada - Space Shooter Game v2\\Form1.cs",
-              "ToolTip": "D:\\Dropbox\\university\\CSx24\\csharp\\Armada - Space Shooter Game v2\\Armada - Space Shooter Game v2\\Form1.cs [Design]",
-              "RelativeToolTip": "Armada - Space Shooter Game v2\\Form1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T02:24:59.986Z",
-              "EditorCaption": " [Design]"
             }
           ]
         }

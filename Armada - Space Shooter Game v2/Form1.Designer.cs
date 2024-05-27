@@ -93,7 +93,7 @@
             // 
             // BulletMvTimer
             // 
-            this.BulletMvTimer.Interval = 15;
+            this.BulletMvTimer.Interval = 5;
             this.BulletMvTimer.Tick += new System.EventHandler(this.BulletMvTimer_Tick);
             // 
             // EnemyMvTimer
@@ -115,7 +115,7 @@
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label1.Location = new System.Drawing.Point(207, 295);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(347, 64);
+            this.label1.Size = new System.Drawing.Size(282, 51);
             this.label1.TabIndex = 1;
             this.label1.Text = "Game Over!";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -129,7 +129,7 @@
             this.labelScore.ForeColor = System.Drawing.SystemColors.Control;
             this.labelScore.Location = new System.Drawing.Point(12, 9);
             this.labelScore.Name = "labelScore";
-            this.labelScore.Size = new System.Drawing.Size(110, 28);
+            this.labelScore.Size = new System.Drawing.Size(94, 23);
             this.labelScore.TabIndex = 4;
             this.labelScore.Text = "Score: ";
             // 
@@ -141,7 +141,7 @@
             this.labelLevel.ForeColor = System.Drawing.SystemColors.Control;
             this.labelLevel.Location = new System.Drawing.Point(612, 9);
             this.labelLevel.Name = "labelLevel";
-            this.labelLevel.Size = new System.Drawing.Size(124, 28);
+            this.labelLevel.Size = new System.Drawing.Size(106, 23);
             this.labelLevel.TabIndex = 5;
             this.labelLevel.Text = "Level: 0";
             // 
@@ -154,7 +154,7 @@
             this.labelPlay.ForeColor = System.Drawing.SystemColors.Control;
             this.labelPlay.Location = new System.Drawing.Point(327, 418);
             this.labelPlay.Name = "labelPlay";
-            this.labelPlay.Size = new System.Drawing.Size(111, 44);
+            this.labelPlay.Size = new System.Drawing.Size(87, 36);
             this.labelPlay.TabIndex = 6;
             this.labelPlay.Text = "PLAY";
             this.labelPlay.Visible = false;
@@ -171,7 +171,7 @@
             this.labelExit.ForeColor = System.Drawing.SystemColors.Control;
             this.labelExit.Location = new System.Drawing.Point(327, 500);
             this.labelExit.Name = "labelExit";
-            this.labelExit.Size = new System.Drawing.Size(111, 44);
+            this.labelExit.Size = new System.Drawing.Size(87, 36);
             this.labelExit.TabIndex = 7;
             this.labelExit.Text = "EXIT";
             this.labelExit.Visible = false;
@@ -188,7 +188,7 @@
             this.labelHelp.ForeColor = System.Drawing.SystemColors.Control;
             this.labelHelp.Location = new System.Drawing.Point(629, 720);
             this.labelHelp.Name = "labelHelp";
-            this.labelHelp.Size = new System.Drawing.Size(131, 21);
+            this.labelHelp.Size = new System.Drawing.Size(107, 18);
             this.labelHelp.TabIndex = 8;
             this.labelHelp.Text = "How to play";
             this.labelHelp.Visible = false;
@@ -201,7 +201,7 @@
             this.panelHelp.Controls.Add(this.labelCloseHelp);
             this.panelHelp.Controls.Add(this.label2);
             this.panelHelp.Controls.Add(this.labelDirections);
-            this.panelHelp.Location = new System.Drawing.Point(104, 198);
+            this.panelHelp.Location = new System.Drawing.Point(91, 192);
             this.panelHelp.Name = "panelHelp";
             this.panelHelp.Size = new System.Drawing.Size(581, 397);
             this.panelHelp.TabIndex = 9;
@@ -217,7 +217,7 @@
             this.labelCloseHelp.ForeColor = System.Drawing.Color.Red;
             this.labelCloseHelp.Location = new System.Drawing.Point(478, 352);
             this.labelCloseHelp.Name = "labelCloseHelp";
-            this.labelCloseHelp.Size = new System.Drawing.Size(82, 28);
+            this.labelCloseHelp.Size = new System.Drawing.Size(70, 23);
             this.labelCloseHelp.TabIndex = 2;
             this.labelCloseHelp.Text = "Close";
             this.labelCloseHelp.Click += new System.EventHandler(this.labelCloseHelp_Click);
@@ -230,7 +230,7 @@
             this.label2.ForeColor = System.Drawing.Color.DodgerBlue;
             this.label2.Location = new System.Drawing.Point(13, 11);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(166, 28);
+            this.label2.Size = new System.Drawing.Size(142, 23);
             this.label2.TabIndex = 1;
             this.label2.Text = "How to Play";
             // 
@@ -242,7 +242,7 @@
             this.labelDirections.ForeColor = System.Drawing.SystemColors.Control;
             this.labelDirections.Location = new System.Drawing.Point(14, 83);
             this.labelDirections.Name = "labelDirections";
-            this.labelDirections.Size = new System.Drawing.Size(478, 216);
+            this.labelDirections.Size = new System.Drawing.Size(399, 171);
             this.labelDirections.TabIndex = 0;
             this.labelDirections.Text = "Press the arrow keys to steer your ship\r\n\r\n               ← ↑ ↓ → \r\n\r\n    Press s" +
     "pacebar to pause the game\r\n\r\n  Blast down enemy ship to gain points\r\n\r\n         " +
@@ -266,16 +266,16 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(782, 753);
+            this.ClientSize = new System.Drawing.Size(784, 761);
             this.Controls.Add(this.panelHelp);
             this.Controls.Add(this.pictureBoxWelcome);
-            this.Controls.Add(this.labelPlay);
             this.Controls.Add(this.labelHelp);
             this.Controls.Add(this.labelLevel);
             this.Controls.Add(this.labelScore);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Player);
             this.Controls.Add(this.labelExit);
+            this.Controls.Add(this.labelPlay);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(800, 800);
             this.MinimumSize = new System.Drawing.Size(800, 800);
