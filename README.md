@@ -16,7 +16,7 @@
 8. [Key Event Handlers](#Key Event Handlers)
 
 ## Introduction
-Armada is a 2D shooter game where the player controls a spaceship and must defeat enemies while avoiding collisions. The game includes multiple levels and various enemy types, with increasing difficulty as the player progresses.
+Armada is a 2D shooter game where the player controls a spaceship and must defeat enemies while avoiding collisions, and launched projectiles. The game includes multiple levels and various enemy types, with increasing difficulty as the player progresses.
 
 ## How to Play
 ### Objective
@@ -573,3 +573,4 @@ private void Armada_KeyUp(object sender, KeyEventArgs e)
     }
 }
 ```
+
